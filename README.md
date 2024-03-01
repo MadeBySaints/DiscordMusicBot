@@ -39,7 +39,7 @@ pip install -U discord.py yt-dlp
 Inside the config.json file, set your Discord channels, and bot token.
 
 ## Run the Bot:
-python bot.py
+python main.py or just run the included startbot.bat
 
 ## Usage
 Use /play <song name or YouTube URL> to play a song or add it to the queue.
