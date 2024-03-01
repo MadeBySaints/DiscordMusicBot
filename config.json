@@ -1,0 +1,6 @@
+{
+    "bot_token": "token here",
+    "voice_channel_id": "channel id here",
+    "command_channel_id": "channel id here"
+  }
+  
