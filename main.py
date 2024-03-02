@@ -40,7 +40,12 @@ async def download_song(search: str):
         }
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(f"ytsearch:{search}", download=False)['entries'][0]
-            ydl.download([info['webpage_url']])
+            # Check if the song already exists before downloading
+            file_name = f'songs/{info["title"]}.mp3'
+            if not os.path.isfile(file_name):
+                ydl.download([info['webpage_url']])
+            else:
+                print(f"File {file_name} already exists. Skipping download.")
             return info
 
     # Run the synchronous function in an executor
