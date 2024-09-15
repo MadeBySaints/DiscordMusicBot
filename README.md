@@ -28,7 +28,7 @@ FFmpeg installed and accessible in your system's PATH
 ## Setup
 Clone the Repository:
 
-git clone https://github.com/MadeBySaints/discord-music-bot.git
+git clone [https://github.com/MadeBySaints/discord-music-bot.git](https://github.com/MadeBySaints/DiscordMusicBot.git)
 
 cd discord-music-bot
 
